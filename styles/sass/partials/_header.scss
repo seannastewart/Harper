@@ -1,0 +1,26 @@
+header {
+    background-color: $accentLight;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 3%; 
+    li {
+        margin: 0 2%;
+    }
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    position: relative;
+}
+
+.circleTextContainer img {
+ position: absolute;
+}

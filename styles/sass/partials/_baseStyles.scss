@@ -1,0 +1,18 @@
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: $buttonColour;
+    border: none;
+    padding: 1% 4%;
+    cursor: pointer;
+    &:hover {
+        transform: scale(105%);
+    }
+    &:focus {
+        transform: scale(105%);
+    }
+}
