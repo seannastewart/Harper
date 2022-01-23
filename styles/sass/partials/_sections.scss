@@ -1,0 +1,69 @@
+.about {
+    margin-bottom: 10%;
+}
+
+.aboutText {
+    margin-left: 50%;
+}
+
+.info {
+    margin: 5% 0 ;
+}
+.info .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & .infoText {
+        width:45%;
+        margin: 0 1%;
+        span {
+            margin-right: 5%;
+            background-color: $accentLight;
+            border-radius: 50%;
+            padding: 3% 4%;
+            font-size: 20px;
+            width:40px;
+            height:40px;
+        }
+        h4 {
+            margin-bottom: 0;
+        }
+        p {
+            margin-left: 18%;
+        }
+    }
+}
+
+.blogPreview {
+    background-color: white;
+    margin: 5% 0;
+    padding-top: 5%;
+    position: relative;
+   
+    h4 {
+        margin: 0;
+    }
+}
+
+
+.blogPostContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8%;
+    position: relative;
+}
+
+.topImgContainer {
+    width:100%;
+    
+    img {
+        width:80%;
+        box-shadow: -219px 12px 0px 0px $accentMedium,
+         8px 12px 0px 0px $accentMedium;
+        
+    }
+
+}
+.previewText {
+    width:50%;
+}

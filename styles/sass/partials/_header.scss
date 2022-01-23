@@ -1,6 +1,7 @@
 header {
     background-color: $accentLight;
-    
+    height: 85vh;
+    margin-bottom: 10%;
 }
 
 nav ul {
@@ -16,11 +17,31 @@ header .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+   
 }
 h1 {
+   
     position: relative;
+
 }
 
-.circleTextContainer img {
+
+.headerImgContainer {
+    // margin-right: 5%;
+
+    img {
+        width: 70%;
+        box-shadow: 20px 20px white;
+        position: relative;
+        top:50px;
+        right:0;
+    }
+}
+
+h1 img {
  position: absolute;
+ width: 28%;
+ right: -9%;
+ bottom: 19%;
 }
