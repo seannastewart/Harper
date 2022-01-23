@@ -289,7 +289,7 @@ ul, li, a, input {
   margin: 0;
 }
 
-ul {
+nav ul {
   list-style: none;
 }
 
@@ -399,11 +399,11 @@ h1 img {
   bottom: 19%;
 }
 
-.about {
+.whosHarper {
   margin-bottom: 10%;
 }
 
-.aboutText {
+.whosHarperText {
   margin-left: 50%;
 }
 
