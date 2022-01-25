@@ -258,23 +258,23 @@ h1, h2, h3, h4, h5, button, a, .logo {
 }
 
 h1 {
-  font-size: 125px;
-}
-
-h2 {
   font-size: 80px;
   line-height: 92px;
 }
 
-h3 {
+.bigLogo {
+  font-size: 125px;
+}
+
+h2 {
   font-size: 42px;
 }
 
-h4 {
+h3 {
   font-size: 32px;
 }
 
-h5 {
+h4 {
   font-size: 24px;
 }
 
@@ -302,6 +302,9 @@ a {
   transition: 0.3s;
 }
 a:hover {
+  color: #f6f6f6;
+}
+a:focus {
   color: #f6f6f6;
 }
 
@@ -352,6 +355,7 @@ header {
   background-color: #b9dde7;
   height: 85vh;
   margin-bottom: 10%;
+  position: relative;
 }
 
 nav ul {
@@ -367,34 +371,37 @@ nav ul li {
   margin: 0 2%;
 }
 
-header .wrapper {
+header .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 80vh;
+  position: relative;
 }
 
-h1 {
+.bigLogo {
   position: relative;
+  margin-right: 10%;
 }
 
 .headerImgContainer img {
-  width: 70%;
+  width: 35%;
   -webkit-box-shadow: 20px 20px white;
           box-shadow: 20px 20px white;
-  position: relative;
-  top: 50px;
-  right: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-h1 img {
+.bigLogo img {
   position: absolute;
-  width: 28%;
+  width: 35%;
   right: -9%;
   bottom: 19%;
 }
@@ -405,6 +412,10 @@ h1 img {
 
 .whosHarperText {
   margin-left: 50%;
+}
+
+.dividerImgContainer {
+  text-align: center;
 }
 
 .info {
@@ -441,11 +452,9 @@ h1 img {
 
 .blogPreview {
   background-color: white;
-  padding: 5% 0;
-  height: 100vh;
 }
 .blogPreview :first-child {
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 }
 
 .blogPostContainer {
@@ -457,29 +466,30 @@ h1 img {
           justify-content: space-between;
 }
 
-.topImgContainer {
-  width: 100%;
-  position: relative;
-}
-.topImgContainer img {
-  width: 85%;
-  position: absolute;
-  top: -39%;
-  -webkit-box-shadow: -219px 19px 0px 0px #68b0c1, 16px 19px 0px 0px #68b0c1;
-          box-shadow: -219px 19px 0px 0px #68b0c1, 16px 19px 0px 0px #68b0c1;
-}
-
+.topImgContainer,
 .bottomImgContainer {
   width: 100%;
   position: relative;
 }
+.topImgContainer img,
 .bottomImgContainer img {
   width: 85%;
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.topImgContainer img {
+  top: -10%;
+  -webkit-box-shadow: -400px 19px 0px 0px #68b0c1, 16px 19px 0px 0px #68b0c1;
+          box-shadow: -400px 19px 0px 0px #68b0c1, 16px 19px 0px 0px #68b0c1;
+}
+
+.bottomImgContainer img {
   right: 0;
   bottom: -10%;
-  -webkit-box-shadow: 219px 19px 0px 0px #b9dde7, 16px 19px 0px 0px #b9dde7;
-          box-shadow: 219px 19px 0px 0px #b9dde7, 16px 19px 0px 0px #b9dde7;
+  -webkit-box-shadow: 400px 19px 0px 0px #b9dde7, 16px 19px 0px 0px #b9dde7;
+          box-shadow: 400px 19px 0px 0px #b9dde7, 16px 19px 0px 0px #b9dde7;
 }
 
 .previewText {
@@ -494,7 +504,7 @@ h1 img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 0;
+  margin-top: 5%;
 }
 .previewText .right {
   -ms-flex-item-align: end;
@@ -502,7 +512,7 @@ h1 img {
 }
 
 .journey {
-  padding: 8% 0;
+  padding: 10% 0 8%;
 }
 
 .journey .wrapper {
