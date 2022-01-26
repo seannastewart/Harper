@@ -9,6 +9,8 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 3%; 
+    background-color: $accentLight;
+    padding: 2%;
     li {
         margin: 0 2%;
     }
@@ -42,4 +44,18 @@ header .headerContainer {
  width: 35%;
  right: -9%;
  bottom: 19%;
+}
+
+.blogHeader {
+    background-image: url("../assets/blog-image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    margin-bottom: 7%;
+    & .wrapper h1 {
+        position: absolute;
+        bottom: -10%;
+    }
 }

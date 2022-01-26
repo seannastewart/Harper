@@ -337,6 +337,8 @@ button {
   border: none;
   padding: 1% 4%;
   cursor: pointer;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
 }
 button:hover {
   -webkit-transform: scale(105%);
@@ -366,6 +368,8 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 3%;
+  background-color: #b9dde7;
+  padding: 2%;
 }
 nav ul li {
   margin: 0 2%;
@@ -404,6 +408,20 @@ header .headerContainer {
   width: 35%;
   right: -9%;
   bottom: 19%;
+}
+
+.blogHeader {
+  background-image: url("../assets/blog-image-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  position: relative;
+  margin-bottom: 7%;
+}
+.blogHeader .wrapper h1 {
+  position: absolute;
+  bottom: -10%;
 }
 
 .whosHarper {
@@ -546,6 +564,57 @@ header .headerContainer {
 }
 .gallery .wrapper .galleryImg {
   width: 30%;
+}
+
+.blog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog .wrapper .blogLeft,
+.blog .wrapper .blogRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog .wrapper .blogLeft div,
+.blog .wrapper .blogRight div {
+  background-color: white;
+}
+.blog .wrapper .blogLeft {
+  width: 31%;
+}
+.blog .wrapper .blogLeft ul {
+  padding: 5% 0 0 10%;
+}
+.blog .wrapper .blogLeft img,
+.blog .wrapper .blogLeft h4 {
+  padding-bottom: 5%;
+}
+.blog .wrapper .blogLeft > div {
+  padding: 10%;
+  margin-bottom: 6%;
+}
+.blog .wrapper .blogLeft p {
+  margin: 0;
+}
+.blog .wrapper .blogRight {
+  width: 66%;
+}
+.blog .wrapper .blogRight > div {
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.underline {
+  border-bottom: 5px solid #227284;
 }
 
 footer {

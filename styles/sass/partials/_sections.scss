@@ -118,3 +118,44 @@
         }
     }
 }
+
+.blog .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .blogLeft,
+    .blogRight {
+        display: flex;
+        flex-direction: column;
+        div {
+            background-color: white;
+        }
+    }
+    .blogLeft {
+        width: 31%;
+        ul {
+            padding: 5% 0 0 10%;
+        }
+        img,
+        h4 {
+            padding-bottom: 5%;
+        }
+        & > div {
+            padding: 10%;
+            margin-bottom: 6%;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .blogRight {
+        width: 66%;
+        & > div {
+            padding: 5%;
+            margin-bottom: 5%;
+        }
+    }
+}
+
+.underline {
+    border-bottom: 5px solid $accentDark;
+}
