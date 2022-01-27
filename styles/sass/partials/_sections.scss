@@ -122,11 +122,12 @@
 .blog .wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 7%;
     .blogLeft,
     .blogRight {
         display: flex;
         flex-direction: column;
-        div {
+        div:not(.topRow) {
             background-color: white;
         }
     }

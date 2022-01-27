@@ -1,0 +1,20 @@
+form {
+    background-color: $bgColour;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    input,
+    textarea {
+        padding: 2%;
+        margin-bottom: 3%;
+        border: none;
+    }
+    .topRow  {
+        display: flex;
+        justify-content: space-between;
+        input {
+            width:49%;
+        }
+    }
+}
