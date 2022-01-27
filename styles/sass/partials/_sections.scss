@@ -174,3 +174,29 @@
 .underline {
     border-bottom: 5px solid $accentDark;
 }
+
+.contact .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .contactLeft {
+        background-color: white;
+        padding: 3%;
+        .socialIcons a i {
+            color: $accentDark;
+            font-size: 30px;
+            margin: 0 6% 8% 0;
+        }
+        h4 {
+            text-transform: lowercase;
+            margin-bottom: 3%;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .contactRight {
+        width: 65%;
+        margin-bottom: 10% ;
+    }
+}

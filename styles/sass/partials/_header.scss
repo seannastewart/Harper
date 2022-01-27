@@ -46,8 +46,8 @@ header .headerContainer {
  bottom: 19%;
 }
 
-.blogHeader {
-    background-image: url("../assets/blog-image-1.jpg");
+.blogHeader,
+.contactHeader {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,3 +59,12 @@ header .headerContainer {
         bottom: -10%;
     }
 }
+
+.blogHeader {
+    background-image: url("../assets/blog-image-1.jpg");
+}
+
+.contactHeader {
+    background-image: url("../assets/contact-image-1.jpg");
+}
+

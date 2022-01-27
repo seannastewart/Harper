@@ -410,8 +410,8 @@ header .headerContainer {
   bottom: 19%;
 }
 
-.blogHeader {
-  background-image: url("../assets/blog-image-1.jpg");
+.blogHeader,
+.contactHeader {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -419,9 +419,18 @@ header .headerContainer {
   position: relative;
   margin-bottom: 7%;
 }
-.blogHeader .wrapper h1 {
+.blogHeader .wrapper h1,
+.contactHeader .wrapper h1 {
   position: absolute;
   bottom: -10%;
+}
+
+.blogHeader {
+  background-image: url("../assets/blog-image-1.jpg");
+}
+
+.contactHeader {
+  background-image: url("../assets/contact-image-1.jpg");
 }
 
 .whosHarper {
@@ -633,6 +642,38 @@ header .headerContainer {
   border-bottom: 5px solid #227284;
 }
 
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contact .wrapper .contactLeft {
+  background-color: white;
+  padding: 3%;
+}
+.contact .wrapper .contactLeft .socialIcons a i {
+  color: #227284;
+  font-size: 30px;
+  margin: 0 6% 8% 0;
+}
+.contact .wrapper .contactLeft h4 {
+  text-transform: lowercase;
+  margin-bottom: 3%;
+}
+.contact .wrapper .contactLeft p {
+  margin: 0;
+}
+.contact .wrapper .contactRight {
+  width: 65%;
+  margin-bottom: 10%;
+}
+
 form {
   background-color: #f6f6f6;
   display: -webkit-box;
@@ -649,7 +690,7 @@ form {
 }
 form input,
 form textarea {
-  padding: 5% 6%;
+  padding: 4% 6%;
   margin-bottom: 3%;
   border: none;
 }
