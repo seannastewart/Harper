@@ -614,6 +614,21 @@ header .headerContainer {
   margin-bottom: 5%;
 }
 
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.comment .commentImgConatiner {
+  width: 25%;
+}
+.comment .commentText {
+  width: 100%;
+}
+.comment .commentText p {
+  margin: 1% 0;
+}
+
 .underline {
   border-bottom: 5px solid #227284;
 }
@@ -634,9 +649,29 @@ form {
 }
 form input,
 form textarea {
-  padding: 2%;
+  padding: 5% 6%;
   margin-bottom: 3%;
   border: none;
+}
+form ::-webkit-input-placeholder {
+  opacity: 1;
+  color: #171717;
+}
+form ::-moz-placeholder {
+  opacity: 1;
+  color: #171717;
+}
+form :-ms-input-placeholder {
+  opacity: 1;
+  color: #171717;
+}
+form ::-ms-input-placeholder {
+  opacity: 1;
+  color: #171717;
+}
+form ::placeholder {
+  opacity: 1;
+  color: #171717;
 }
 form .topRow {
   display: -webkit-box;

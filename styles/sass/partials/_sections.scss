@@ -157,6 +157,20 @@
     }
 }
 
+.comment {
+    display: flex;
+    .commentImgConatiner {
+        width: 25%;
+    }
+    .commentText {
+        width: 100%;
+        p {
+                margin: 1% 0;
+            }
+    }
+    
+}
+
 .underline {
     border-bottom: 5px solid $accentDark;
 }
