@@ -39,7 +39,7 @@
 .blogPreview {
     background-color: white;
     & :first-child {
-        margin-bottom: 4%;
+        margin-bottom: 7%;
     }
     
 }
@@ -64,7 +64,7 @@
 
 
 .topImgContainer img {
-        top: -10%;
+        top: -17%;
         box-shadow: -400px 19px 0px 0px $accentMedium,
          16px 19px 0px 0px $accentMedium;
     }
@@ -73,7 +73,7 @@
 
 .bottomImgContainer img {
         right: 0;
-        bottom:-10%;
+        bottom:-17%;
         box-shadow: 400px 19px 0px 0px $accentLight,
          16px 19px 0px 0px $accentLight;
     }
