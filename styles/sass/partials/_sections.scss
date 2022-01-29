@@ -159,8 +159,12 @@
 
 .comment {
     display: flex;
-    .commentImgConatiner {
-        width: 25%;
+    .commentImgContainer {
+        width: 20%;
+        margin-right: 2%;
+        img: {
+            width: 100%;
+        }
     }
     .commentText {
         width: 100%;
@@ -193,6 +197,9 @@
         }
         p {
             margin: 0;
+        }
+        span {
+            display: block;
         }
     }
     .contactRight {
