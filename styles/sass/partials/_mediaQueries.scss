@@ -23,18 +23,19 @@
 
 
 @media (max-width: 900px) {
-    header {
+    .homeHeader {
         height: 100vh;
     }
-    nav ul {
+    .homeNav {
         margin-bottom: 4%;
     }
     .bigLogo {
         font-size: 90px;
         margin-top: 80px;
     }
-    .headerContainer {
+    header .headerContainer {
         flex-direction: column;
+        justify-content: center;
     }
     .headerImgContainer {
         display: flex;
@@ -81,6 +82,9 @@
 }
 
 @media (max-width: 700px) {
+    .logo {
+        display: none;
+    }
     .journey .wrapper {
         flex-direction: column;
         align-items: center;
@@ -88,4 +92,58 @@
             margin-top: 10%;
         }
     }
+    .blogPostContainer button {
+        margin-bottom: 5%;
+    }
+    .blogPostContainer.travel {
+        flex-direction: column;
+    }
+    .blogPostContainer.fav {
+        flex-direction: column-reverse;
+    }
+    .gallery .wrapper .galleryImg {
+        width: 47%;
+        &:nth-of-type(2) {
+        display: none;
+     }
+    }
+}
+
+@media (max-width: 450px) {
+
+.bigLogo {
+    font-size: 70px;
+    img {
+        bottom: 30%;
+    }
+}
+
+
+nav ul {
+    flex-direction: column;
+    padding:2%;
+    position: absolute;
+    left: -200%;
+    z-index: 1;
+    li {
+        margin-left:0;
+    }
+    & :first-child {
+        margin-top:5%;
+    }
+}
+label i {
+   position: absolute;
+    left: 10%;
+    font-size: 30px;
+    opacity: 1;
+    margin: 0;
+    cursor: pointer;
+    padding-top:5%;
+   
+}
+input[type=checkbox] {
+    position: relative;
+}
+
 }

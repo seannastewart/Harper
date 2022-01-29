@@ -5,17 +5,6 @@ header {
     position: relative;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 3%; 
-    background-color: $accentLight;
-    padding: 2%;
-    li {
-        margin: 0 2%;
-    }
-}
-
 header .headerContainer {
     display: flex;
     justify-content: flex-end;

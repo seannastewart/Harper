@@ -14,9 +14,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="homeHeader">
+
         <nav>
-            <ul>
+            <label for="menuIcon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menuIcon">
+
+            <ul class="homeNav">
+
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#whosHarper">About</a></li>
                 <li class='logo'>Harper</li>
@@ -24,7 +31,6 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-
         <div class="wrapper headerContainer">
             <div class="headerImgContainer">
                 <img src="./assets/home-image-1.jpg" alt="a girl surrounded by pink and blue balloons">
@@ -92,7 +98,7 @@
         </section>
 
         <section class="blogPreview">
-            <div class="blogPostContainer wrapper">
+            <div class="blogPostContainer wrapper travel">
                 <div class="topImgContainer">
                     <img src="assets/home-image-3.jpg" alt="two people surfing at sunset">
                 </div>
@@ -106,7 +112,7 @@
             </div>
 
 
-            <div class="blogPostContainer wrapper">
+            <div class="blogPostContainer wrapper fav">
                 <div class="previewText">
                     <h3>Favourite Things</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero tempore hic suscipit? Sed
