@@ -208,9 +208,10 @@
             width: 100%;
         
     }
-}
-.contact .wrapper .contactLeft {
-    margin-top: 10%;
-}
+    }
+    .contact .wrapper,
+    .blog .wrapper {
+        margin-top: 15%;
+    }
 
 }

@@ -23,11 +23,13 @@ label i {
         position: absolute;
         &:checked ~ ul {
             left: 10%;
-            top:7%;
             background-color: rgba($color: $bgColour, $alpha: 0.5);
         }
+        &:checked ~ .homeNav {
+            top:7%;
+        }
         &:checked ~ .blogNav,
-        &:checked ~ .blogNav {
-            top: 15%;
+        &:checked ~ ul.ContactNav {
+            top: 12%;
         }
     }

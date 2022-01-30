@@ -386,11 +386,13 @@ input[type=checkbox] {
 }
 input[type=checkbox]:checked ~ ul {
   left: 10%;
-  top: 7%;
   background-color: rgba(246, 246, 246, 0.5);
 }
-input[type=checkbox]:checked ~ .blogNav, input[type=checkbox]:checked ~ .blogNav {
-  top: 15%;
+input[type=checkbox]:checked ~ .homeNav {
+  top: 7%;
+}
+input[type=checkbox]:checked ~ .blogNav, input[type=checkbox]:checked ~ ul.ContactNav {
+  top: 12%;
 }
 
 header {
@@ -1037,7 +1039,8 @@ footer p {
     width: 100%;
   }
 
-  .contact .wrapper .contactLeft {
-    margin-top: 10%;
+  .contact .wrapper,
+.blog .wrapper {
+    margin-top: 15%;
   }
 }
