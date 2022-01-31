@@ -389,9 +389,9 @@ input[type=checkbox]:checked ~ ul {
   background-color: rgba(246, 246, 246, 0.5);
 }
 input[type=checkbox]:checked ~ .homeNav {
-  top: 7%;
+  top: 6%;
 }
-input[type=checkbox]:checked ~ .blogNav, input[type=checkbox]:checked ~ ul.ContactNav {
+input[type=checkbox]:checked ~ .blogNav, input[type=checkbox]:checked ~ ul.contactNav {
   top: 12%;
 }
 

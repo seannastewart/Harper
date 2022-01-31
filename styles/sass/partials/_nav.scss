@@ -26,10 +26,10 @@ label i {
             background-color: rgba($color: $bgColour, $alpha: 0.5);
         }
         &:checked ~ .homeNav {
-            top:7%;
+            top:6%;
         }
         &:checked ~ .blogNav,
-        &:checked ~ ul.ContactNav {
+        &:checked ~ ul.contactNav {
             top: 12%;
         }
     }
