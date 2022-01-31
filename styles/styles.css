@@ -471,6 +471,9 @@ header .headerContainer {
 .dividerImgContainer {
   text-align: center;
 }
+.dividerImgContainer img {
+  width: 100%;
+}
 
 .info {
   margin: 5% 0;
