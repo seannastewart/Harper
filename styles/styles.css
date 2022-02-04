@@ -763,6 +763,11 @@ form .topRow input {
   width: 49%;
 }
 
+.submitted {
+  background-color: grey;
+  color: white;
+}
+
 footer {
   background-color: #171717;
   padding: 0;
