@@ -21,15 +21,17 @@ label i {
  input[type=checkbox] {
         opacity: 0;
         position: absolute;
-        &:checked ~ ul {
-            left: 10%;
-            background-color: rgba($color: $bgColour, $alpha: 0.5);
+    }
+
+    .mobileNav {
+        left: 10%;
+        padding:5%;
+        background-color: rgba($color: $bgColour, $alpha: 0.5);
+        &.homeNav {
+            top:7%;
         }
-        &:checked ~ .homeNav {
-            top:8%;
-        }
-        &:checked ~ .blogNav,
-        &:checked ~ ul.contactNav {
-            top: 17%;
+        &.contactNav,
+        &.blogNav {
+            top:15%;
         }
     }

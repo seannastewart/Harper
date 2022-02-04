@@ -384,15 +384,17 @@ input[type=checkbox] {
   opacity: 0;
   position: absolute;
 }
-input[type=checkbox]:checked ~ ul {
+
+.mobileNav {
   left: 10%;
+  padding: 5%;
   background-color: rgba(246, 246, 246, 0.5);
 }
-input[type=checkbox]:checked ~ .homeNav {
-  top: 8%;
+.mobileNav.homeNav {
+  top: 7%;
 }
-input[type=checkbox]:checked ~ .blogNav, input[type=checkbox]:checked ~ ul.contactNav {
-  top: 17%;
+.mobileNav.contactNav, .mobileNav.blogNav {
+  top: 15%;
 }
 
 header {
@@ -1018,7 +1020,7 @@ footer p {
     margin-top: 5%;
   }
 
-  label i {
+  nav i {
     position: absolute;
     left: 10%;
     font-size: 30px;
