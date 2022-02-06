@@ -768,6 +768,10 @@ form .topRow input {
   color: white;
 }
 
+.errorBorder {
+  border: 3px solid red;
+}
+
 footer {
   background-color: #171717;
   padding: 0;
