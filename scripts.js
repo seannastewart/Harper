@@ -37,7 +37,7 @@ formElement.addEventListener('submit', function (event) {
         messageElement.classList.add('errorBorder');
         document.querySelector('.errorMessage').innerHTML = `<p> Please complete all fields</p>`
     }
-    if (messageElement.value != '' && inputElement.name.value != '' && inputElement.email.value != '') {
+    if (messageElement.value !== '' && inputElement.name.value !== '' && inputElement.email.value !== '') {
         buttonElement.classList.add('submitted');
         buttonElement.textContent = "Submitted";
         messageElement.classList.remove('errorBorder');
