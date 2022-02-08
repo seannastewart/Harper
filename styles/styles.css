@@ -772,6 +772,12 @@ form .topRow input {
   border: 3px solid red;
 }
 
+.blog .wrapper .blogRight form .errorMessage,
+.contactRight form .errorMessage {
+  color: red;
+  background-color: #f6f6f6;
+}
+
 footer {
   background-color: #171717;
   padding: 0;
