@@ -391,10 +391,10 @@ input[type=checkbox] {
   background-color: rgba(246, 246, 246, 0.5);
 }
 .mobileNav.homeNav {
-  top: 7%;
+  top: 6%;
 }
 .mobileNav.contactNav, .mobileNav.blogNav {
-  top: 15%;
+  top: 12%;
 }
 
 header {
